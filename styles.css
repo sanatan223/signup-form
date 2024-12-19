@@ -1,0 +1,13 @@
+.page{
+    background-color: rgb(222, 222, 222);
+}
+
+.img{
+    height: 100%;
+    width: 450px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
