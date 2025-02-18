@@ -1,26 +1,20 @@
 .page{
     background-color: rgb(222, 222, 222);
-    height: 1000px;
+    display: flex;
+    justify-content: end;
+
 }
 
 .left-part{
-    height: 100%;
-    width: 450px;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: red;
 }
 
 .img{
-    height: 100%;
-    width: 450px;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
+    height: fit-content;
     opacity: 0.8;
 }
 
@@ -36,11 +30,23 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: Higher jump;
+    position: absolute;
+    left: 0%;
+    top: 50%;
 }
 
 .odin-logo{
     height: 80px;
     margin-right: 10px;
+}
+
+.right-part{
+    margin-left: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 @font-face {
