@@ -1,7 +1,8 @@
 .page{
-    background-color: rgb(222, 222, 222);
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 
 }
 
@@ -10,7 +11,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: red;
 }
 
 .img{
@@ -41,12 +41,56 @@
 }
 
 .right-part{
-    margin-left: 450px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    text-align: left;
+    flex: 1;
+
+}
+
+.txt-1{
+    width: 600px;
+    margin-left: 70px;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.bottom-part{
+    margin-top: 50px;
+    box-shadow: 0px 5px 10px -5px black;
+    padding: 30px;
+
+
+}
+
+.inp-sec{
+    margin-left: 70px;
+    display: flex;
+    margin-bottom: 50px;   
+}
+
+.inp-part{
+    margin-right: 100px;
+
+}
+
+.inp-box{
+    padding: 5px;
+    border-top: 10px;
+}
+.create-btn{
+    margin-left: 70px;
+    margin-top: 30px;
+    height: 40px;
+    width: 130px;
+    background-color: rgb(119, 119, 119);
+    color: white;
+}
+
+input:focus{
+    border: none;
+    box-shadow: 5px 5px 10px #5a87e1;
 }
 
 @font-face {
