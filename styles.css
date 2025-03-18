@@ -1,13 +1,17 @@
 .page{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: auto;
+    background-color: #ffc1d1;
+    margin: none;
 
 }
 
 .left-part{
     display: flex;
+    max-width: 80vw;
+    height: auto;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -15,7 +19,9 @@
 
 .img{
     height: fit-content;
+    max-width: 40vw;
     opacity: 0.8;
+
 }
 
 .logo-part{
@@ -36,7 +42,7 @@
 }
 
 .odin-logo{
-    height: 80px;
+    max-height: 80px;
     margin-right: 10px;
 }
 
@@ -44,13 +50,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: left;
     flex: 1;
+    
 
 }
 
 .txt-1{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin-left: 70px;
     font-size: 19px;
     margin-bottom: 10px;
@@ -58,34 +67,38 @@
 
 .bottom-part{
     margin-top: 50px;
-    box-shadow: 0px 5px 10px -5px black;
+    box-shadow: 2px 10px 30px 5px black;
     padding: 30px;
-
+    background-color: #dc2150;
+    width: 40vw;
 
 }
 
 .inp-sec{
     margin-left: 70px;
     display: flex;
+    justify-content: space-around;
     margin-bottom: 50px;   
-}
-
-.inp-part{
-    margin-right: 100px;
-
 }
 
 .inp-box{
     padding: 5px;
     border-top: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 .create-btn{
     margin-left: 70px;
     margin-top: 30px;
     height: 40px;
     width: 130px;
-    background-color: rgb(119, 119, 119);
-    color: white;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 input:focus{
@@ -96,4 +109,51 @@ input:focus{
 @font-face {
     font-family: 'Higher Jump';
     src: url('fonts/higher-jump.regular.ttf') format('truetype');
+}
+
+@media (max-width: 600px) {
+    body{
+        background-image: url('images/image.webp');
+        background-size: cover;
+        color: rgb(255, 255, 255);
+    }
+    .page{
+        flex-direction: column;
+    }
+    .left-part{
+        width: 100vw;
+        position: relative;
+    }
+    .img{
+        display: none;
+    }
+    .logo-part{
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        top: 0%;
+        white-space: nowrap;
+    }
+    .right-part{
+        width: 100%;
+        position: absolute;
+        margin-top: 50px;
+    }
+    .txt-1{
+        margin-left: 0px;
+    }
+    .bottom-part{
+        width: 80vw;
+    }
+    .inp-sec{
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .inp-part{
+        display: flex;
+        justify-content: space-between;
+    }
+    .create-btn{
+        margin-left: 0px;
+    }
 }
